@@ -34,11 +34,11 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
-photo = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
-cpphoto = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
-appxzip = "https://i.postimg.cc/dVY9nL63/IMG-20250426-130510-655.jpg"
-my_name = "乂 𝐌𝐑 ᭄ 𝐀𝐒𝐇𝐈𝐒𝐇 メ💀"
-CHANNEL_ID = "-1002607772171"##change it with your channel 🆔 
+photo = "https://i.ibb.co/s90M8fvr/file-1004.jpg"
+cpphoto = "https://i.ibb.co/0y0gpzFh/file-992.jpg"
+appxzip = "https://i.ibb.co/fGQYwwwR/file-999.jpg"
+my_name = "𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷"
+CHANNEL_ID = "-1002630069470"##change it with your channel 🆔 
 
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
@@ -152,7 +152,7 @@ async def start(client: Client, msg: Message):
     await asyncio.sleep(1)
     await start_message.edit_text(
         Data.START.format(msg.from_user.mention) +
-        "Checking status Ok... Command Nhi Bataunga **Bot Made BY 乂 𝐌𝐑 ᭄ 𝐀𝐒𝐇𝐈𝐒𝐇 メ™👨🏻‍💻**🔍\n\n"
+        "Checking status Ok... Command Nhi Bataunga **Bot Made BY 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷**🔍\n\n"
         "Progress:[🟩🟩🟩🟩🟩🟩🟩🟩🟩] 100%\n\n"
     )
 
@@ -172,7 +172,7 @@ async def txt_handler(bot: Client, m: Message):
     x = await input.download()
     await input.delete(True)
     file_name, ext = os.path.splitext(os.path.basename(x))
-    credit = f"乂 𝐌𝐑 ᭄ 𝐀𝐒𝐇𝐈𝐒𝐇 メ™"
+    credit = f"𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷"
     token = f"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MzYxNTE3MzAuMTI2LCJkYXRhIjp7Il9pZCI6IjYzMDRjMmY3Yzc5NjBlMDAxODAwNDQ4NyIsInVzZXJuYW1lIjoiNzc2MTAxNzc3MCIsImZpcnN0TmFtZSI6IkplZXYgbmFyYXlhbiIsImxhc3ROYW1lIjoic2FoIiwib3JnYW5pemF0aW9uIjp7Il9pZCI6IjVlYjM5M2VlOTVmYWI3NDY4YTc5ZDE4OSIsIndlYnNpdGUiOiJwaHlzaWNzd2FsbGFoLmNvbSIsIm5hbWUiOiJQaHlzaWNzd2FsbGFoIn0sImVtYWlsIjoiV1dXLkpFRVZOQVJBWUFOU0FIQEdNQUlMLkNPTSIsInJvbGVzIjpbIjViMjdiZDk2NTg0MmY5NTBhNzc4YzZlZiJdLCJjb3VudHJ5R3JvdXAiOiJJTiIsInR5cGUiOiJVU0VSIn0sImlhdCI6MTczNTU0NjkzMH0.iImf90mFu_cI-xINBv4t0jVz-rWK1zeXOIwIFvkrS0M"
     try:    
         with open(x, "r") as f:
@@ -232,7 +232,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**Enter resolution.\n Eg : 480 or 720**")
+    await editable.edit("**Enter resolution.\n Eg : 144,240,360,480,720,1080 please choose quality**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -254,7 +254,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 𝗦𝗣𝗜𝗗𝗬™👨🏻‍💻**")
+    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -439,12 +439,12 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name} {res}.𝐓𝐇𝐀𝐊𝐔𝐑 𝐒𝐀𝐇𝐀𝐁❤️.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.𝐓𝐇𝐀𝐊𝐔𝐑 𝐒𝐀𝐇𝐀𝐁❤️.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
-                cyt = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.𝐓𝐇𝐀𝐊𝐔𝐑 𝐒𝐀𝐇𝐀𝐁❤️.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
-                ccp = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.𝐓𝐇𝐀𝐊𝐔𝐑 𝐒𝐀𝐇𝐀𝐁❤️.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
-                czip = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.𝐓𝐇𝐀𝐊𝐔𝐑 𝐒𝐀𝐇𝐀𝐁❤️.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
-                cczip = f'**💾 ZIP_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.𝐓𝐇𝐀𝐊𝐔𝐑 𝐒𝐀𝐇𝐀𝐁❤️.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name} {res}.𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                cyt = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                ccp = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                czip = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷.mkv\n\n📚 Batch Name: {b_name}\n\n**🔗 𝐕𝐢𝐝𝐞𝐨 𝐥𝐢𝐧𝐤 - ({url})**\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
+                cczip = f'**💾 ZIP_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} {my_name}.𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦{my_name}✦━━━━━**'
                     
                 
                 if "drive" in url:
@@ -664,7 +664,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 乂 𝐌𝐑 ᭄ 𝐀𝐒𝐇𝐈𝐒𝐇 メ"
+                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -724,7 +724,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**Enter resolution.\n Eg : 480 or 720**")
+    await editable.edit("**Enter resolution.\n Eg : 144,240,360,480,720,1080 please choose quality**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -746,7 +746,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : RAJPUT JI™👨🏻‍💻**")
+    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -847,8 +847,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\nTitle: {name1} RAJPUT {res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖🇮🇳📖✦━━━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\nTitle: {name1} RAJPUT JI.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖🇮🇳📖✦━━━━━**'
+                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\nTitle: {name1} 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷 {res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖🇮🇳📖✦━━━━━**'
+                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\nTitle: {name1} 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦📖🇮🇳📖✦━━━━━**'
                     
                 
                 if "drive" in url:
@@ -910,7 +910,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ RAJPUT JI"
+                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -969,7 +969,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**Enter resolution.\n Eg : 480 or 720**")
+    await editable.edit("**Enter resolution.\n Eg : 144,240,360,480,720,1080 please choose quality**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -991,7 +991,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 乂 𝐌𝐑 ᭄ 𝐀𝐒𝐇𝐈𝐒𝐇 メ™👨🏻‍💻**")
+    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -1110,8 +1110,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**<pre><code>🎞️ 𝐕𝐈𝐃_𝐈𝐃: {str(count).zfill(3)}.</code></pre>\n\n<pre><code>📝 𝐓𝐈𝐓𝐋𝐄:👇🏻</code></pre>\n<pre><code>{name1} {res} .mkv</code></pre>\n\n<pre><code>📚 𝐁𝐀𝐓𝐂𝐇 𝐍𝐀𝐌𝐄:👇🏻</code>\n</pre><pre><code>{b_name}</code></pre>\n\n<pre><code>✨𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 : {CR}</code></pre>**\n\n<pre><code>━━━━━✦𝐓𝐇𝐀𝐊𝐔𝐑 𝐒𝐀𝐇𝐀𝐁❤️✦━━━━━</code></pre>'
-                cc1 = f'**<pre><code>📁 𝐏𝐃𝐅_𝐈𝐃: {str(count).zfill(3)}.</code></pre>\n\n<pre><code>📝 𝐓𝐈𝐓𝐋𝐄:👇🏻</code></pre>\n<pre><code>{name1} .pdf</code></pre>\n\n<pre><code>📚 𝐁𝐀𝐓𝐂𝐇 𝐍𝐀𝐌𝐄:👇🏻</code>\n</pre><pre><code>{b_name}</code></pre>\n\n<pre><code>✨𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 : {CR}</code></pre>**\n\n<pre><code>━━━━━✦𝐓𝐇𝐀𝐊𝐔𝐑 𝐒𝐀𝐇𝐀𝐁❤️✦━━━━━</code></pre>'
+                cc = f'**<pre><code>🎞️ 𝐕𝐈𝐃_𝐈𝐃: {str(count).zfill(3)}.</code></pre>\n\n<pre><code>📝 𝐓𝐈𝐓𝐋𝐄:👇🏻</code></pre>\n<pre><code>{name1} {res} .mkv</code></pre>\n\n<pre><code>📚 𝐁𝐀𝐓𝐂𝐇 𝐍𝐀𝐌𝐄:👇🏻</code>\n</pre><pre><code>{b_name}</code></pre>\n\n<pre><code>✨𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 : {CR}</code></pre>**\n\n<pre><code>━━━━━✦𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷✦━━━━━</code></pre>'
+                cc1 = f'**<pre><code>📁 𝐏𝐃𝐅_𝐈𝐃: {str(count).zfill(3)}.</code></pre>\n\n<pre><code>📝 𝐓𝐈𝐓𝐋𝐄:👇🏻</code></pre>\n<pre><code>{name1} .pdf</code></pre>\n\n<pre><code>📚 𝐁𝐀𝐓𝐂𝐇 𝐍𝐀𝐌𝐄:👇🏻</code>\n</pre><pre><code>{b_name}</code></pre>\n\n<pre><code>✨𝐄𝐗𝐓𝐑𝐀𝐂𝐓𝐄𝐃 𝐁𝐘 : {CR}</code></pre>**\n\n<pre><code>━━━━━✦𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷✦━━━━━</code></pre>'
                     
                 
                 if "drive" in url:
@@ -1173,7 +1173,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 乂 𝐌𝐑 ᭄ 𝐀𝐒𝐇𝐈𝐒𝐇 メ"
+                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -1233,7 +1233,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**Enter resolution.\n Eg : 480 or 720**")
+    await editable.edit("**Enter resolution.\n Eg : 144,240,360,480,720,1080 please choose quality**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -1255,7 +1255,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 𝗦𝗣𝗜𝗗𝗬™👨🏻‍💻**")
+    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -1371,8 +1371,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n Title: {name1} @Spidy_Universe {res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦乂 𝐌𝐑 ᭄ 𝐀𝐒𝐇𝐈𝐒𝐇 メ💀✦━━━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\n Title: {name1} @Spidy_Universe.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦乂 𝐌𝐑 ᭄ 𝐀𝐒𝐇𝐈𝐒𝐇 メ💀✦━━━━━**'
+                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n Title: {name1} 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷 {res}.mkv\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷✦━━━━━**'
+                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\n Title: {name1} 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷.pdf\n\n📚 Batch Name: {b_name}\n\n📥 Extracted By : {CR}\n\n**━━━━━✦𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷✦━━━━━**'
                     
                 
                 if "drive" in url:
@@ -1434,7 +1434,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ RAJPUT JI"
+                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
@@ -1493,7 +1493,7 @@ async def txt_handler(bot: Client, m: Message):
     else:
         b_name = raw_text0
 
-    await editable.edit("**Enter resolution.\n Eg : 480 or 720**")
+    await editable.edit("**Enter resolution.\n Eg : 144,240,360,480,720,1080 please choose quality**")
     input2: Message = await bot.listen(editable.chat.id)
     raw_text2 = input2.text
     await input2.delete(True)
@@ -1515,7 +1515,7 @@ async def txt_handler(bot: Client, m: Message):
     except Exception:
             res = "UN"
     
-    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 𝐓𝐇𝐀𝐊𝐔𝐑 𝐒𝐀𝐇𝐀𝐁❤️™👨🏻‍💻**")
+    await editable.edit("**Enter Your Name or send 'de' for use default.\n Eg : 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷**")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
@@ -1632,8 +1632,8 @@ async def txt_handler(bot: Client, m: Message):
 
             try:  
                 
-                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} @Spidy_Universe {res}.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}\n\n**━━━━━✦𝐓𝐇𝐀𝐊𝐔𝐑 𝐒𝐀𝐇𝐀𝐁❤️✦━━━━━**'
-                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} @Spidy_Universe.pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}\n\n**━━━━━✦𝐓𝐇𝐀𝐊𝐔𝐑 𝐒𝐀𝐇𝐀𝐁❤️✦━━━━━**'
+                cc = f'**🎞️ VID_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷 {res}.mkv\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}\n\n**━━━━━✦𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷✦━━━━━**'
+                cc1 = f'**📁 PDF_ID: {str(count).zfill(3)}.\n\n📝 Title: {name1} 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷.pdf\n\n<pre><code>📚 Batch Name: {b_name}</code></pre>\n\n📥 Extracted By : {CR}\n\n**━━━━━✦𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷✦━━━━━**'
                     
                 
                 if "drive" in url:
@@ -1695,7 +1695,7 @@ async def txt_handler(bot: Client, m: Message):
                         continue                       
                           
                 else:
-                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ RAJPUT JI"
+                    Show = f"📥 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 »\n\n📝 Title:- `{name}\n\n**🔗 𝐓𝐨𝐭𝐚𝐥 𝐔𝐑𝐋 »** ✨{len(links)}✨\n\n⌨ 𝐐𝐮𝐥𝐢𝐭𝐲 » {raw_text2}`\n\n**🔗 𝐔𝐑𝐋 »** `{url}`\n\n**𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ 𝗧𝗮𝗽𝗼𝗿𝗶 𝟮.𝟬🥷"
                     prog = await m.reply_text(Show)
                     res_file = await helper.download_video(url, cmd, name)
                     filename = res_file
